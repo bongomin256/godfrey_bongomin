@@ -65,5 +65,11 @@
       "liveUrl": "https://bongomin256.github.io/Godfrey-Bongomin",
       "images": "./images/others/react-portfolio.png"
     }
+  ],
+  "skills": [
+    { "languages": ["Javascript", "HTML", "CSS"] },
+    { "database": ["MySQL", "MongoDB", "GraphQL"] },
+    { "Framework": ["ReactJs", "Bootstrap", "Tailwindcss", "Vue"] },
+    { "tools": ["VsCode", "Git", "Figma"] }
   ]
 }
