@@ -13,13 +13,28 @@ const Footer = () => {
             front-end / web developer
           </p>
         </div>
-        <div className="flex  justify-center gap-10 text-4xl text-pink-main lg:">
-          <BsGithub />
-          <BsLinkedin />
-          <SiUpwork />
+        <div className="flex  justify-center gap-10 text-4xl text-pink-main md:gap-6">
+          <a
+            href="https://github.com/bongomin256"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsGithub />
+          </a>
+          <a
+            href="https://linkedin.com/in/godfrey-bongomin/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsLinkedin />
+          </a>
+
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            <SiUpwork />
+          </a>
         </div>
       </div>
-      <p className="text-white  text-md"> &copy;2023. Made by Bongo</p>
+      <p className="text-md"> Copyright 2023 | Made by Bongo</p>
     </section>
   );
 };

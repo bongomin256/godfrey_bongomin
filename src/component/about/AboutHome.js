@@ -8,13 +8,13 @@ import { GrMysql } from "react-icons/gr";
 
 const AboutHome = () => {
   return (
-    <section className="px-5 md:flex md:flex-row-reverse md:gap-8 md:px-12 lg:px-20 lg:gap-32">
+    <section className="px-5 md:flex md:flex-row-reverse md:gap-8 md:px-12 lg:px-32 lg:gap-32 mb-20">
       <img
         className="rounded-full w-[250px] h-[250px] m-auto mb-5 lg:w-[250px] lg:h-[250px] border-4 border-pink-main md:m-0 md:w-full"
         src={myphoto}
         alt=""
       />
-      <div className="text-center md:text-start">
+      <div className="text-center md:text-start text-gray-main">
         <p className="mb-3">Hi! call me</p>
         <p className="mb-3 text-xl text-pink-main font-semibold">
           Godfrey <span className="text-white">(Bongo)</span> Bongomin

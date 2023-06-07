@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
-import Button from "../btn/Button";
+import { Button, Button1, Button2 } from "../btn/Button";
 import { useState } from "react";
 import Logo from "../logo/Logo";
 
@@ -15,7 +15,7 @@ const Navbar = () => {
   ];
   return (
     <>
-      <header className="px-5 py-8 md:px-12 lg:px-20 w-full">
+      <header className="px-5 py-8 md:px-12 lg:px-20 w-full mb-20">
         <nav className="flex items-center justify-between cursor-pointer w-full ">
           <h1 className="text-3xl font-bold text-gray-main">
             <NavLink to="/">
@@ -39,7 +39,17 @@ const Navbar = () => {
             }`}
           >
             {Links.map((link) => (
-              <li key={link.name}>
+              <li
+                key={link.name}
+                // className="hover:text-white hover:transition-all hover:ease-in-out hover:duration-300"
+                className={({ isActive }) => {
+                  return (
+                    //! TO-DO: Fix the active state og the navbar
+                    "hover:text-white hover:transition-all hover:ease-in-out hover:duration-300" +
+                    (isActive ? "text-white" : "text-gray-main")
+                  );
+                }}
+              >
                 <NavLink to={link.path}>{link.name}</NavLink>
               </li>
             ))}
