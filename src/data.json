@@ -67,9 +67,21 @@
     }
   ],
   "skills": [
-    { "languages": ["Javascript", "HTML", "CSS"] },
-    { "database": ["MySQL", "MongoDB", "GraphQL"] },
-    { "Framework": ["ReactJs", "Bootstrap", "Tailwindcss", "Vue"] },
-    { "tools": ["VsCode", "Git", "Figma"] }
+    {
+      "title": "languages",
+      "skillArrs": ["Javascript", "HTML", "CSS"]
+    },
+    {
+      "title": "database",
+      "skillArrs": ["MySQL", "MongoDB", "GraphQL"]
+    },
+    {
+      "title": "Framework",
+      "skillArrs": ["ReactJs", "Bootstrap", "Tailwindcss", "Vue"]
+    },
+    {
+      "title": "tools",
+      "skillArrs": ["VsCode", "Git", "Figma"]
+    }
   ]
 }
