@@ -17,18 +17,19 @@ const AboutMeComp = () => {
             {/* md:grid md:gap-5 md:grid-cols-2 md:items-center md:justify-center */}
             <div className="mb-5 w-full">
               <img
-                className="md:rounded-full lg:rounded-md lg:w-[300px]  lg:hover:rotate-3 transition-all duration-300 ease-in-out rounded-md lg:shadow-lg lg:shadow-white "
+                className="md:rounded-full lg:rounded-md lg:w-[300px] lg:rotate-3  lg:hover:rotate-0 transition-all duration-300 ease-in-out rounded-md lg:shadow-lg lg:shadow-white "
                 // md:w-full  lg:w-[300px] lg:hover:rotate-3 transition-all duration-300 ease-in-out rounded-md
                 src={myimage}
                 alt=""
               />
             </div>
-            <div>
-              <p className="mb-5 text-center md:text-start">
+            <div className="text-center md:text-start">
+              <p>Hi there 👋,</p>
+              <p className="mb-5">
                 My name is Godfrey Bongomin but I grew up being called Bongo, so
                 this is my way of telling you that you can call me BONGO!
               </p>
-              <p className="mb-5 text-center md:text-start">
+              <p className="mb-5 ">
                 I have 8 years of experience working in production, logistics,
                 customer service, and management in a multi-cultural setting.
                 Having already earned a BBA from a globally accredited
@@ -37,7 +38,7 @@ const AboutMeComp = () => {
                 for a web development position with a company I am passionate
                 about.
               </p>
-              <p className="text-center md:text-start">
+              <p className="">
                 Currently I am building my skillset by working on frontend
                 mentor challenges and i am open to work freelance or full-time
                 position
