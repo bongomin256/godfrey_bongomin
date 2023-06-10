@@ -37,6 +37,7 @@ const Navbar = () => {
                 ? "right-0 block "
                 : "right-[-750px] md:right-[-1020px] lg:right-0 "
             }`}
+            onClick={() => setOpen(false)}
           >
             {Links.map((link) => (
               <li

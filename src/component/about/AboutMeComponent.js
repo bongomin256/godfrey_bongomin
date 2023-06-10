@@ -9,10 +9,19 @@ const AboutMeComp = () => {
         <h2 className="text-xl text-center mb-5">
           <span className="text-pink-main">/</span>About Me
         </h2>
+
         <div>
-          <div className="mb-12 md:grid md:grid-cols-2 gap-5 md:items-center">
-            <div className="mb-5">
-              <img className="" src={myimage} alt="" />
+          {/* !fix md and lg display and change*/}
+          <div className="mb-12 md:flex md:gap-5 md:flex-row-reverse  md:items-center md:justify-center lg:gap-8">
+            {/* mb-12 md:flex md:gap-5 md:items-center md:justify-center */}
+            {/* md:grid md:gap-5 md:grid-cols-2 md:items-center md:justify-center */}
+            <div className="mb-5 w-full">
+              <img
+                className="md:rounded-full lg:rounded-md lg:w-[300px]  lg:hover:rotate-3 transition-all duration-300 ease-in-out rounded-md lg:shadow-lg lg:shadow-white "
+                // md:w-full  lg:w-[300px] lg:hover:rotate-3 transition-all duration-300 ease-in-out rounded-md
+                src={myimage}
+                alt=""
+              />
             </div>
             <div>
               <p className="mb-5 text-center md:text-start">
@@ -39,29 +48,31 @@ const AboutMeComp = () => {
             <h2 className="text-xl text-center mb-5">
               <span className="text-pink-main">#</span>Skills
             </h2>
-            <div className="md:grid md:grid-cols-4 gap-2">
-              {data.skills &&
-                data.skills.map((skill) => (
-                  <div
-                    key={skill.title}
-                    className="border border-gray-main mb-5 "
-                  >
-                    <div className="border-b border-b-gray-main">
-                      <h3 className="text-lg pl-5 py-2 text-pink-main capitalize">
-                        {skill.title}
-                      </h3>
-                    </div>
+            <div className="">
+              <div className="w-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide  flex gap-2 md:justify-center">
+                {data.skills &&
+                  data.skills.map((skill) => (
+                    <div
+                      key={skill.title}
+                      className="border border-gray-main  w-[200px] cursor-pointer"
+                    >
+                      <div className="border-b border-b-gray-main">
+                        <h3 className="text-lg px-5 py-2 text-pink-main capitalize">
+                          {skill.title}
+                        </h3>
+                      </div>
 
-                    <ul className="pl-5 py-3 ">
-                      {skill.skillArrs &&
-                        skill.skillArrs.map((skillArr) => (
-                          <li className="mb-2" key={skillArr}>
-                            {skillArr}
-                          </li>
-                        ))}
-                    </ul>
-                  </div>
-                ))}
+                      <ul className="pl-5 py-3 ">
+                        {skill.skillArrs &&
+                          skill.skillArrs.map((skillArr) => (
+                            <li className="mb-2" key={skillArr}>
+                              {skillArr}
+                            </li>
+                          ))}
+                      </ul>
+                    </div>
+                  ))}
+              </div>
             </div>
           </div>
         </div>
