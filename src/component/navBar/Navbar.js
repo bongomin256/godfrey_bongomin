@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
-import { Button, Button1, Button2 } from "../btn/Button";
+import { Button, Button1, Button2 } from "../constants/btn/Button";
 import { useState } from "react";
 import Logo from "../logo/Logo";
 

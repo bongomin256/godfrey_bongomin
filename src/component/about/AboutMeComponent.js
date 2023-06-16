@@ -1,12 +1,13 @@
 import React from "react";
 import myimage from "../../assets/myphoto.jpeg";
 import data from "../../data.json";
+import PageSection from "../constants/PageSection";
 
 const AboutMeComp = () => {
   return (
-    <section className="px-5 md:px-12 lg:px-32">
+    <PageSection>
       <div>
-        <h2 className="text-xl text-center mb-5">
+        <h2 className="text-white text-xl text-center mb-5">
           <span className="text-pink-main">/</span>About Me
         </h2>
 
@@ -17,7 +18,7 @@ const AboutMeComp = () => {
             {/* md:grid md:gap-5 md:grid-cols-2 md:items-center md:justify-center */}
             <div className="mb-5 w-full">
               <img
-                className="md:rounded-full lg:rounded-md lg:w-[300px] lg:rotate-3  lg:hover:rotate-0 transition-all duration-300 ease-in-out rounded-md lg:shadow-lg lg:shadow-white "
+                className="border-4 rounded-full w-[200px] m-auto border-pink-main md:min-w-[250px] md:rounded-full lg:rounded-lg lg:w-[300px] lg:rotate-3  lg:hover:rotate-0 transition-all duration-300 ease-in-out lg:shadow-lg lg:shadow-white "
                 // md:w-full  lg:w-[300px] lg:hover:rotate-3 transition-all duration-300 ease-in-out rounded-md
                 src={myimage}
                 alt=""
@@ -46,16 +47,16 @@ const AboutMeComp = () => {
             </div>
           </div>
           <div>
-            <h2 className="text-xl text-center mb-5">
+            <h2 className="text-white text-xl  text-center mb-5">
               <span className="text-pink-main">#</span>Skills
             </h2>
             <div className="">
-              <div className="w-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide  flex gap-2 md:justify-center">
+              <div className="w-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide  flex gap-2 md:justify-center md:gap-5 ">
                 {data.skills &&
                   data.skills.map((skill) => (
                     <div
                       key={skill.title}
-                      className="border border-gray-main  w-[200px] cursor-pointer"
+                      className="border border-gray-main  w-[200px] cursor-pointer lg:cursor-default"
                     >
                       <div className="border-b border-b-gray-main">
                         <h3 className="text-lg px-5 py-2 text-pink-main capitalize">
@@ -78,7 +79,7 @@ const AboutMeComp = () => {
           </div>
         </div>
       </div>
-    </section>
+    </PageSection>
   );
 };
 
