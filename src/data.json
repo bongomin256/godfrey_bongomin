@@ -7,7 +7,7 @@
       "techs": ["Javascript", "HTML", "CSS"],
       "github": "https://github.com/bongomin256/loopstudio-landing-page",
       "liveUrl": "https://bongomin256.github.io/loopstudio-landing-page/",
-      "images": "./images/featured/loopstudio.png"
+      "images": "/godfrey_bongomin/images/featured/loopstudio.png"
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "techs": ["React", "TailwindCss", "CSS"],
       "github": "https://github.com/bongomin256/audiophile-ecommerce-website",
       "liveUrl": "",
-      "images": "./images/featured/audiophile.png"
+      "images": "/godfrey_bongomin/images/featured/audiophile.png"
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "techs": ["Javascript", "HTML", "CSS", "Handlebars", "MySQL"],
       "github": "https://github.com/rkutsel/local-exchange-hub",
       "liveUrl": "https://local-exchange-hub.herokuapp.com/",
-      "images": "./images/featured/localExchangeHub.png"
+      "images": "/godfrey_bongomin/images/featured/localExchangeHub.png"
     },
     {
       "id": 4,
@@ -34,7 +34,7 @@
       "techs": ["Javascript", "HTML", "CSS", "Bulma", "APIs"],
       "github": "https://github.com/bongomin256/Random-Recipe-Generator",
       "liveUrl": "https://bongomin256.github.io/Random-Recipe-Generator/",
-      "images": "./images/featured/RRG.png"
+      "images": "/godfrey_bongomin/images/featured/RRG.png"
     }
   ],
   "others": [
@@ -45,7 +45,7 @@
       "techs": ["Javascript", "HTML", "CSS", "APIs"],
       "github": "https://github.com/bongomin256/Weather-Dashboard",
       "liveUrl": "https://bongomin256.github.io/Weather-Dashboard/",
-      "images": "./images/others/weather.png"
+      "images": "/godfrey_bongomin/images/others/weather.png"
     },
     {
       "id": 2,
@@ -54,7 +54,7 @@
       "techs": ["Javascript", "HTML", "CSS"],
       "github": "https://github.com/bongomin256/Work-Day-Planner",
       "liveUrl": "https://bongomin256.github.io/Work-Day-Planner/",
-      "images": "./images/others/workdayPlanner.png"
+      "images": "/godfrey_bongomin/images/others/workdayPlanner.png"
     },
     {
       "id": 3,
@@ -63,7 +63,7 @@
       "techs": ["React", "Styled-component", "CSS"],
       "github": "https://github.com/bongomin256/Godfrey-Bongomin",
       "liveUrl": "https://bongomin256.github.io/Godfrey-Bongomin",
-      "images": "./images/others/react-portfolio.png"
+      "images": "/godfrey_bongomin/images/others/react-portfolio.png"
     }
   ],
   "skills": [
