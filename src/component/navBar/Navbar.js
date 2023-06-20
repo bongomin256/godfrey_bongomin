@@ -43,15 +43,24 @@ const Navbar = () => {
               <li
                 key={link.name}
                 // className="hover:text-white hover:transition-all hover:ease-in-out hover:duration-300"
-                className={({ isActive }) => {
-                  return (
-                    //! TO-DO: Fix the active state og the navbar
-                    "hover:text-white hover:transition-all hover:ease-in-out hover:duration-300" +
-                    (isActive ? "text-white" : "text-gray-main")
-                  );
-                }}
+                // className={({ isActive }) => {
+                //   return (
+                //     //! TO-DO: Fix the active state og the navbar
+                //     "hover:text-white hover:transition-all hover:ease-in-out hover:duration-300" +
+                //     (isActive ? "text-white" : "text-gray-main")
+                //   );
+                // }}
               >
-                <NavLink to={link.path}>{link.name}</NavLink>
+                <NavLink
+                  to={link.path}
+                  className={({ isActive }) => {
+                    return isActive
+                      ? "text-white"
+                      : "text-gray-main  hover:text-pink-main hover:transition-all hover:ease-in-out hover:duration-300";
+                  }}
+                >
+                  {link.name}
+                </NavLink>
               </li>
             ))}
 
