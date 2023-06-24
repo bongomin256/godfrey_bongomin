@@ -9,3 +9,7 @@ body {
   background-color: #282c33;
   color: #abb2bf;
 }
+
+.project_layout:nth-child(even) .project_img {
+  order: 2;
+}

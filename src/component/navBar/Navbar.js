@@ -34,7 +34,7 @@ const Navbar = () => {
               open ? "block" : "hidden"
             }left-0 transition-all duration-500 lg:transition-none pl-5 pt-10 md:pl-12  lg:pl-0 lg:pt-0 text-2xl bg-[#31353E] ${
               open
-                ? "right-0 block "
+                ? "right-0 block z-50"
                 : "right-[-750px] md:right-[-1020px] lg:right-0 "
             }`}
             onClick={() => setOpen(false)}
@@ -65,7 +65,13 @@ const Navbar = () => {
             ))}
 
             <div>
-              <Button>Resume</Button>
+              <a
+                href="https://drive.google.com/file/d/1mUKo6KW-nGo9boMF8KylR-U1U1L51N9h/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button>Resume</Button>
+              </a>
             </div>
             <Logo />
           </ul>

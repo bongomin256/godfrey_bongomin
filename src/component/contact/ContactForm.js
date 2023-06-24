@@ -1,15 +1,30 @@
 import React, { useRef, useState } from "react";
+
 import emailjs from "@emailjs/browser";
+// import { useForm } from "react-hook-form";
+// import * as yup from "yup";
+
+// import { yupResolver } from "@hookform/resolvers/yup";
 
 import { SlLocationPin, SlEnvolope } from "react-icons/sl";
 import { Button4 } from "../constants/btn/Button";
 
 const ContactForm = () => {
-  const form = useRef();
+  // const schema = yup.object().shape({
+  //   fullName: yup.string().required(),
+  //   email: yup.string().email().required(),
+  //   message: yup.string().required,
+  // });
 
+  // const { register, handleSubmit } = useForm({
+  //   resolver: yupResolver(schema),
+  // });
+
+  const form = useRef();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [messageSent, setMessageSent] = useState(false);
 
   const handleName = (e) => {
     setName(e.target.value);
@@ -39,11 +54,17 @@ const ContactForm = () => {
       .then(
         (result) => {
           console.log(result.text);
+          console.log(result);
         },
         (error) => {
           console.log(error.text);
         }
       );
+
+    setMessageSent(true);
+    setTimeout(() => {
+      setMessageSent(false);
+    }, 3000);
 
     setName("");
     setEmail("");
@@ -89,6 +110,7 @@ const ContactForm = () => {
               value={name}
               onChange={handleName}
               placeholder="Name"
+              // {...register("fullName")}
             />
             <input
               className="mb-5 bg-bg-main border-2 border-gray-main p-2 w-full  focus:bg-white focus:border-none focus:text-gray-main"
@@ -96,16 +118,24 @@ const ContactForm = () => {
               id="email"
               value={email}
               placeholder="Email"
+              // {...register("email")}
               onChange={handleEmail}
             />
             <textarea
               className=" bg-bg-main border-2 mb-3 border-gray-main p-2 w-full  focus:bg-white focus:border-none focus:text-gray-main"
-              name="message"
+              // name="message"
+              type="text"
               id="message"
+              // {...register("message")}
               value={message}
               placeholder="Message here...!"
               onChange={handleMessage}
             ></textarea>
+            {messageSent && (
+              <span className=" text-pink-main italic mb-5">
+                Message sent successfully!
+              </span>
+            )}
             <Button4>send</Button4>
           </form>
         </div>
