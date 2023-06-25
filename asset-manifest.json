@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/godfrey_bongomin/static/css/main.8aa6b7b0.css",
-    "main.js": "/godfrey_bongomin/static/js/main.579961f1.js",
+    "main.css": "/godfrey_bongomin/static/css/main.e84116d1.css",
+    "main.js": "/godfrey_bongomin/static/js/main.b3e30480.js",
     "static/media/myphoto.jpeg": "/godfrey_bongomin/static/media/myphoto.48fab4d3ab1ceb71c42c.jpeg",
     "index.html": "/godfrey_bongomin/index.html",
-    "main.8aa6b7b0.css.map": "/godfrey_bongomin/static/css/main.8aa6b7b0.css.map",
-    "main.579961f1.js.map": "/godfrey_bongomin/static/js/main.579961f1.js.map"
+    "main.e84116d1.css.map": "/godfrey_bongomin/static/css/main.e84116d1.css.map",
+    "main.b3e30480.js.map": "/godfrey_bongomin/static/js/main.b3e30480.js.map"
   },
   "entrypoints": [
-    "static/css/main.8aa6b7b0.css",
-    "static/js/main.579961f1.js"
+    "static/css/main.e84116d1.css",
+    "static/js/main.b3e30480.js"
   ]
 }
