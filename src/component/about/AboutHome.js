@@ -16,11 +16,11 @@ const AboutHome = () => {
       />
       <div className="text-center md:text-start text-gray-main">
         <p className="mb-3">Hi! call me</p>
-        <p className="mb-3 text-xl text-pink-main font-semibold">
+        <p className="mb-3 text-2xl text-pink-main font-semibold">
           Godfrey <span className="text-white">(Bongo)</span> Bongomin
         </p>
         <div className="mb-8">
-          <p>
+          <p className="text-lg leading-10 ">
             I am a{" "}
             <span className="text-pink-main">frontend web developer</span> with
             backend knowledge based in Seattle, WA. I design and develop
