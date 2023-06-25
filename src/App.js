@@ -7,12 +7,14 @@ import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import ScrollToTop from "./component/ScrollToTop";
 
 function App() {
   return (
     <>
       <Router basename="/godfrey_bongomin">
         <Navbar />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<AboutMe />} />
