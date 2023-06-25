@@ -15,7 +15,7 @@ const Navbar = () => {
   ];
   return (
     <>
-      <header className="px-5 py-8 md:px-12 lg:px-20 w-full mb-20">
+      <header className="sticky top-0 z-20 bg-bg-main px-5 py-8 md:px-12 lg:px-20 w-full mb-20 ">
         <nav className="flex items-center justify-between cursor-pointer w-full ">
           <h1 className="text-3xl font-bold text-gray-main">
             <NavLink to="/">
