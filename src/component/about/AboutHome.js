@@ -45,3 +45,5 @@ const AboutHome = () => {
     </section>
   );
 };
+
+export default AboutHome;
