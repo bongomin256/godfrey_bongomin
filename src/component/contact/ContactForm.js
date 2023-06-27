@@ -8,6 +8,7 @@ import emailjs from "@emailjs/browser";
 
 import { SlLocationPin, SlEnvolope } from "react-icons/sl";
 import { Button4 } from "../constants/btn/Button";
+import { motion } from "framer-motion";
 
 const ContactForm = () => {
   // const schema = yup.object().shape({
@@ -73,7 +74,17 @@ const ContactForm = () => {
   return (
     <section>
       <div className="md:grid md:grid-cols-2 lg:px-32">
-        <div className="mb-10">
+        <motion.div
+          className="mb-10"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ delay: 0.25, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
           <div className="flex items-center gap-5 mb-5">
             <div className="bg-white text-bg-main rounded-full p-2 ">
               <SlLocationPin className="h-10 w-10 lg:h-12 lg:w-12" />
@@ -100,8 +111,17 @@ const ContactForm = () => {
               </p>
             </div>
           </div>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ delay: 0.25, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: 50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
           <form id="contact_form" onSubmit={sendEmail} ref={form}>
             <input
               className="mb-5 bg-bg-main border-2 border-gray-main p-2 w-full focus:bg-white active:border-none focus:text-gray-main"
@@ -138,7 +158,7 @@ const ContactForm = () => {
             )}
             <Button4>send</Button4>
           </form>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
