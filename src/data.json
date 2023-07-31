@@ -15,7 +15,7 @@
       "description": "This is an eCommerce website that allows user to view the optimal layout for the site depending on their device's screen size, add to cart and checkout",
       "techs": ["React", "TailwindCss", "CSS"],
       "github": "https://github.com/bongomin256/audiophile-ecommerce-website",
-      "liveUrl": "",
+      "liveUrl": "https://audiophile-ecommerce-website-blue.vercel.app/",
       "images": "/godfrey_bongomin/images/featured/audiophile.png"
     },
     {
