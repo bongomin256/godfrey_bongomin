@@ -18,12 +18,20 @@ export const Freelance = () => {
     >
       {projects.realwork &&
         projects.realwork.map((project) => (
-          <div
+          <motion.div
             key={project.id}
-            className="p-4 mb-8 text-center rounded-lg bg-bg-modal lg:grid lg:grid-cols-2 lg:gap-10 lg:items-center lg:px-8"
+            className="p-4 mb-8 text-center rounded-lg freelance_layout bg-bg-modal lg:grid lg:grid-cols-2 lg:gap-10 lg:items-center lg:px-8"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ delay: 0.3, duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
           >
             <motion.div
-              className="mb-5 md:mb-5 lg:mb-0"
+              className="mb-5 freelance_img md:mb-5 lg:mb-0"
               //
               initial="hidden"
               whileInView="visible"
@@ -92,7 +100,7 @@ export const Freelance = () => {
                 </div>
               </div>
             </motion.div>
-          </div>
+          </motion.div>
         ))}
     </motion.div>
   );

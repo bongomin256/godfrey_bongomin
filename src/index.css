@@ -10,6 +10,10 @@ body {
   color: #abb2bf;
 }
 
-.project_layout:nth-child(even) .project_img {
+.project_layout:nth-child(odd) .project_img {
+  order: 2;
+}
+
+.freelance_layout:nth-child(even) .freelance_img {
   order: 2;
 }

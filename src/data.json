@@ -3,33 +3,24 @@
     {
       "id": 1,
       "appName": "Creative Women",
-      "description": "Home decoration e-Commerces website that allows users to creat an account, add to cart and checkout. It is responsive website that is compatible to all device sizes",
-      "techs": ["Shopify", "Custom HTML", "Custome CSS"],
+      "description": "I designed and developed a responsive Ecommerce website with mulitple customer groups/prices for retail, wholesale and dropship for my client on Shopify.. I utilized Shopify, Custom HTML, CSS, and JavaScript.",
+      "techs": ["Shopify", "HTML", "CSS", "Javascript"],
       "liveUrl": "https://creativewomen.net/",
-      "images": "./images/featured/creativewomen1.png"
+      "images": "/godfrey_bongomin/images/featured/creativewomen1.png"
     },
     {
       "id": 2,
       "appName": "Bee Organized",
-      "description": "Blog posts for professional home and life organizing company that specializes in simplifying your space so that you can be more efficient, present and peaceful at home and beyond.",
-      "techs": ["Wordpress", "Custom HTML", "Custome CSS"],
+      "description": "As the Technical Web Support Specialist, my responsibilities include build and maintain monthly blog posts on their Wordpress website. I utilize Wordpress, Custom HTML, and CSS. My other responsibilities include Mailchimp/Jobber & Zapier/Jobber integrations,  full website audits & reporting, plus additional website maintenance and partner support. ",
+      "techs": ["Wordpress", "HTML", "CSS"],
       "liveUrl": "https://beeorganized.com/buzz-tips/",
-      "images": "./images/featured/beeorganized.png"
+      "images": "/godfrey_bongomin//images/featured/beeorganized.png"
     }
   ],
   "featured": [
     {
       "id": 1,
-      "appName": "loopstudio landing page",
-      "description": "This is loopstudio landing page, it allows users to view the optimal layout for the site depending on their device's screen size and see hover states for all interactive elements on the page ",
-      "techs": ["Javascript", "HTML", "CSS"],
-      "github": "https://github.com/bongomin256/loopstudio-landing-page",
-      "liveUrl": "https://bongomin256.github.io/loopstudio-landing-page/",
-      "images": "/godfrey_bongomin/images/featured/loopstudio.png"
-    },
-    {
-      "id": 2,
-      "appName": "audiohpile",
+      "appName": "audiophile",
       "description": "This is an eCommerce website that allows user to view the optimal layout for the site depending on their device's screen size, add to cart and checkout",
       "techs": ["React", "TailwindCss", "CSS"],
       "github": "https://github.com/bongomin256/audiophile-ecommerce-website",
@@ -37,7 +28,27 @@
       "images": "/godfrey_bongomin/images/featured/audiophile.png"
     },
     {
-      "id": 3,
+      "id": 2,
+      "appName": "loopstudio landing page",
+      "description": "This is loopstudio landing page, it allows users to view the optimal layout for the site depending on their device's screen size and see hover states for all interactive elements on the page ",
+      "techs": ["Javascript", "HTML", "CSS"],
+      "github": "https://github.com/bongomin256/loopstudio-landing-page",
+      "liveUrl": "https://bongomin256.github.io/loopstudio-landing-page/",
+      "images": "/godfrey_bongomin/images/featured/loopstudio.png"
+    }
+  ],
+  "others": [
+    {
+      "id": 1,
+      "appName": "random recipes generator",
+      "description": "The web app generate random recipes to any ingredients provided.The main aim of this application is to incorporate two APIs (Edemam and Giphy)  and use the  fetched datas to update the page with one api depending on the other.",
+      "techs": ["Javascript", "HTML", "CSS", "Bulma", "APIs"],
+      "github": "https://github.com/bongomin256/Random-Recipe-Generator",
+      "liveUrl": "https://bongomin256.github.io/Random-Recipe-Generator/",
+      "images": "/godfrey_bongomin/images/featured/RRG.png"
+    },
+    {
+      "id": 2,
       "appName": "local exchange hub",
       "description": "In this web app, you can signup and post any used item/s that you would like to get rid of for free or in exchange of something that some other user posted, other than throwing it away to reduce waste and its impact to the environment.",
       "techs": ["Javascript", "HTML", "CSS", "Handlebars", "MySQL"],
@@ -45,19 +56,9 @@
       "liveUrl": "https://local-exchange-hub.herokuapp.com/",
       "images": "/godfrey_bongomin/images/featured/localExchangeHub.png"
     },
+
     {
-      "id": 4,
-      "appName": "random recipes generator",
-      "description": "The web app generate random recipes to any ingredients provided.The main aim of this application is to incorporate two APIs (Edemam and Giphy)  and use the  fetched datas to update the page with one api depending on the other.",
-      "techs": ["Javascript", "HTML", "CSS", "Bulma", "APIs"],
-      "github": "https://github.com/bongomin256/Random-Recipe-Generator",
-      "liveUrl": "https://bongomin256.github.io/Random-Recipe-Generator/",
-      "images": "/godfrey_bongomin/images/featured/RRG.png"
-    }
-  ],
-  "others": [
-    {
-      "id": 1,
+      "id": 3,
       "appName": "weather dashboard",
       "description": "This is a school individual project where we were tasked to design a Weather Dashboard. This appplcation fetches data for any city searched from open weather map API and use the fetched data to update the page.",
       "techs": ["Javascript", "HTML", "CSS", "APIs"],
@@ -66,7 +67,7 @@
       "images": "/godfrey_bongomin/images/others/weather.png"
     },
     {
-      "id": 2,
+      "id": 4,
       "appName": "work day scheduler",
       "description": "This is Work day planner web application, it is like a to-do app which helps you plan your work day. In the present time the color of the task block is green and if past the hour it changes to grey.",
       "techs": ["Javascript", "HTML", "CSS"],
@@ -75,7 +76,7 @@
       "images": "/godfrey_bongomin/images/others/workdayPlanner.png"
     },
     {
-      "id": 3,
+      "id": 5,
       "appName": "react portfolio",
       "description": "This is my first react personal portfolio website that i designed after the completion of my bootcamp to showcase the acquired skillsets",
       "techs": ["React", "Styled-component", "CSS"],
