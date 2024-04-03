@@ -1,5 +1,6 @@
 import React from "react";
 import myphoto from "../../assets/myphoto.jpeg";
+import { Button1, Button2 } from "../constants/btn/Button";
 
 //* React icons
 import {
@@ -76,7 +77,7 @@ const AboutHome = () => {
           }}
         >
           <p className="text-xl font-semibold">Stack |</p>
-          <div className="flex gap-2 text-2xl text-pink-main">
+          <div className="flex gap-2 md:text-2xl text-pink-main">
             <FaCss3Alt />
             <FaJs />
             <FaReact />
@@ -90,6 +91,14 @@ const AboutHome = () => {
             <FaFigma />
           </div>
         </motion.div>
+        {/* <div className="flex flex-col gap-2 mt-5 ">
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            <Button1>Hire Me</Button1>
+          </a>
+          <a href="mailto:">
+            <Button2>Get Intouch</Button2>
+          </a>
+        </div> */}
       </motion.div>
     </section>
   );
