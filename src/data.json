@@ -1,4 +1,22 @@
 {
+  "realwork": [
+    {
+      "id": 1,
+      "appName": "Creative Women",
+      "description": "Home decoration e-Commerces website that allows users to creat an account, add to cart and checkout. It is responsive website that is compatible to all device sizes",
+      "techs": ["Shopify", "Custom HTML", "Custome CSS"],
+      "liveUrl": "https://creativewomen.net/",
+      "images": "./images/featured/creativewomen1.png"
+    },
+    {
+      "id": 2,
+      "appName": "Bee Organized",
+      "description": "Blog posts for professional home and life organizing company that specializes in simplifying your space so that you can be more efficient, present and peaceful at home and beyond.",
+      "techs": ["Wordpress", "Custom HTML", "Custome CSS"],
+      "liveUrl": "https://beeorganized.com/buzz-tips/",
+      "images": "./images/featured/beeorganized.png"
+    }
+  ],
   "featured": [
     {
       "id": 1,
