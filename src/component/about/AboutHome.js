@@ -2,7 +2,16 @@ import React from "react";
 import myphoto from "../../assets/myphoto.jpeg";
 
 //* React icons
-import { FaCss3Alt, FaJs, FaReact, FaHtml5, FaNodeJs } from "react-icons/fa";
+import {
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaHtml5,
+  FaNodeJs,
+  FaShopify,
+  FaWordpress,
+  FaFigma,
+} from "react-icons/fa";
 import { SiTailwindcss, SiMongodb } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 
@@ -42,7 +51,7 @@ const AboutHome = () => {
         }}
       >
         <p className="mb-3">Hi! call me</p>
-        <p className="mb-3 text-2xl text-pink-main font-semibold">
+        <p className="mb-3 text-2xl font-semibold text-pink-main">
           Godfrey <span className="text-white">(Bongo)</span> Bongomin
         </p>
         <div className="mb-8">
@@ -67,7 +76,7 @@ const AboutHome = () => {
           }}
         >
           <p className="text-xl font-semibold">Stack |</p>
-          <div className="flex gap-2 text-pink-main text-2xl">
+          <div className="flex gap-2 text-2xl text-pink-main">
             <FaCss3Alt />
             <FaJs />
             <FaReact />
@@ -76,6 +85,9 @@ const AboutHome = () => {
             <FaNodeJs />
             <GrMysql />
             <SiMongodb />
+            <FaShopify />
+            <FaWordpress />
+            <FaFigma />
           </div>
         </motion.div>
       </motion.div>
