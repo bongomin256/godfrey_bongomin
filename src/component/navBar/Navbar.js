@@ -15,8 +15,8 @@ const Navbar = () => {
   ];
   return (
     <>
-      <header className="sticky top-0 z-20 bg-bg-main px-5 py-8 md:px-12 lg:px-20 w-full mb-20 ">
-        <nav className="flex items-center justify-between cursor-pointer w-full ">
+      <header className="sticky top-0 z-20 w-full px-5 py-8 mb-20 bg-bg-main md:px-12 lg:px-20 ">
+        <nav className="flex items-center justify-between w-full cursor-pointer ">
           <h1 className="text-3xl font-bold text-gray-main">
             <NavLink to="/">
               <span className="text-pink-main">Godfrey</span> Bongomin
@@ -24,7 +24,7 @@ const Navbar = () => {
           </h1>
           <div
             onClick={() => setOpen(!open)}
-            className="lg:hidden text-3xl text-gray-main"
+            className="text-3xl lg:hidden text-gray-main"
           >
             {open ? <AiOutlineClose /> : <BiMenuAltRight />}
           </div>
@@ -66,7 +66,7 @@ const Navbar = () => {
 
             <div>
               <a
-                href="https://drive.google.com/file/d/1mUKo6KW-nGo9boMF8KylR-U1U1L51N9h/view?usp=sharing"
+                href="https://drive.google.com/file/d/1TH4jgB1nhL09y4WCL2X8hF9QRgUudXRW/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
