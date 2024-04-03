@@ -1,6 +1,7 @@
 // import { Button, Button1, Button2, Button3 } from "../constants/btn/Button";
 import { Button1, Button2 } from "./btn/Button";
 import projects from "../../data.json";
+import { Freelance } from "../realwork/Freelance";
 
 //* Framer Motion Aninamtion
 import { motion } from "framer-motion";
@@ -8,11 +9,12 @@ import { motion } from "framer-motion";
 const ProjectFeactured = () => {
   return (
     <div>
+      <Freelance />
       {projects.featured &&
         projects.featured.map((project) => (
           <motion.div
             key={project.id}
-            className="project_layout bg-bg-modal p-4 rounded-lg text-center lg:grid lg:grid-cols-2 lg:gap-10 lg:items-center  lg:px-8 mb-8"
+            className="p-4 mb-8 text-center rounded-lg project_layout bg-bg-modal lg:grid lg:grid-cols-2 lg:gap-10 lg:items-center lg:px-8"
             // using motion from framer motion for aninamation
             initial="hidden"
             whileInView="visible"
@@ -24,7 +26,7 @@ const ProjectFeactured = () => {
             }}
           >
             <motion.div
-              className="project_img mb-5 md:mb-5 lg:mb-0"
+              className="mb-5 project_img md:mb-5 lg:mb-0"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
@@ -35,7 +37,7 @@ const ProjectFeactured = () => {
               }}
             >
               <img
-                className="rounded-lg  hover:scale-105 opacity-40 hover:opacity-100 ease-in-out duration-300"
+                className="duration-300 ease-in-out rounded-lg hover:scale-105 opacity-40 hover:opacity-100"
                 src={project.images}
                 alt=""
               />
@@ -51,7 +53,7 @@ const ProjectFeactured = () => {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              <h3 className="mb-5 text-pink-main text-xl md:text-start ">
+              <h3 className="mb-5 text-xl text-pink-main md:text-start ">
                 {project.appName}
               </h3>
               <div>
@@ -77,7 +79,7 @@ const ProjectFeactured = () => {
                   </a>
                 </motion.div>
                 <div className="border-t-2 border-gray-main">
-                  <ul className="flex justify-center flex-wrap gap-2 pt-2 text-pink-main font-light md:justify-start">
+                  <ul className="flex flex-wrap justify-center gap-2 pt-2 font-light text-pink-main md:justify-start">
                     {project.techs &&
                       project.techs.map((tech) => (
                         <li key={tech}>

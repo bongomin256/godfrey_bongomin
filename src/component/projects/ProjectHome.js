@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const ProjectHome = () => {
   return (
-    <section className="px-5 md:px-12 lg:px-32 mb-48">
+    <section className="px-5 mb-48 md:px-12 lg:px-32">
       <motion.div
         // using motion from framer motion for aninamation
         initial="hidden"

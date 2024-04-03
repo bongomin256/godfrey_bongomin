@@ -1,4 +1,4 @@
-import { Button1, Button2 } from "../constants/btn/Button";
+import { Button1 } from "../constants/btn/Button";
 
 import projects from "../../data.json";
 import { motion } from "framer-motion";
@@ -88,13 +88,6 @@ export const Freelance = () => {
                           {tech}
                         </li>
                       ))}
-
-                    {/* <li>
-                      <span className="text-white">-</span>Tailwindcss
-                    </li>
-                    <li>
-                      <span className="text-white">-</span>CSS
-                    </li> */}
                   </ul>
                 </div>
               </div>
