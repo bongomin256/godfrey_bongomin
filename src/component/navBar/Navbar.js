@@ -66,7 +66,7 @@ const Navbar = () => {
 
             <div>
               <a
-                href="https://drive.google.com/file/d/1TH4jgB1nhL09y4WCL2X8hF9QRgUudXRW/view?usp=sharing"
+                href="https://drive.google.com/file/d/1FkQziUMKS_UrtUshxdXsCRNkoJOdoDAW/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -1,3 +1,5 @@
+// import { useState } from "react";
+
 //! importing the constants
 import { Button, Button3 } from "../constants/btn/Button";
 import projects from "../../data.json";
@@ -9,6 +11,16 @@ import PageSection from "../constants/PageSection";
 import ProjectFeactured from "../constants/projectFeactured";
 
 const ProjectComponent = () => {
+  // const [fullDescription, setFullDescription] = useState(false);
+
+  // let otherProjects = projects.others;
+  // console.log(otherProjects);
+
+  // let otherProDescription = otherProjects.map((project) => project.description);
+
+  // if (!fullDescription) {
+  //   otherProDescription = otherProDescription.slice(0, 100) + "...";
+  // }
   return (
     <PageSection>
       <motion.div
@@ -22,14 +34,14 @@ const ProjectComponent = () => {
           visible: { opacity: 1, y: 0 },
         }}
       >
-        <h2 className="text-white text-xl text-center capitalize">
+        <h2 className="text-xl text-center text-white capitalize">
           <span className="text-pink-main">/</span>projects
         </h2>
       </motion.div>
 
       <ProjectFeactured />
 
-      <div className=" mt-20">
+      <div className="mt-20 ">
         <motion.div
           className="mb-20"
           initial="hidden"
@@ -41,12 +53,12 @@ const ProjectComponent = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <h3 className="text-white text-xl text-center capitalize">
+          <h3 className="text-xl text-center text-white capitalize">
             <span className="text-pink-main">#</span>other projects
           </h3>
         </motion.div>
 
-        <div className=" overflow-x-scroll scroll scroll-smooth scrollbar-hide flex gap-4 w-full ">
+        <div className="flex w-full gap-4 overflow-x-scroll scroll scroll-smooth scrollbar-hide">
           {projects.others &&
             projects.others.map((other) => (
               <motion.div
@@ -62,14 +74,15 @@ const ProjectComponent = () => {
                   visible: { opacity: 1, y: 0 },
                 }}
               >
-                <div className="border-b border-b-gray-main text-center">
-                  <h3 className="text-lg  py-1 text-pink-main capitalize">
+                <div className="text-center border-b border-b-gray-main">
+                  <h3 className="py-1 text-lg capitalize text-pink-main">
                     {other.appName}
                   </h3>
                 </div>
 
                 <div className="px-5 py-3">
                   <div className="mb-5">{other.description}</div>
+                  {/* <div className="mb-5">{otherProDescription}</div> */}
                   <div className="flex gap-4 lg:justify-center lg:gap-8">
                     <motion.a
                       href={other.github}
