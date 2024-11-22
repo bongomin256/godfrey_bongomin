@@ -2,6 +2,22 @@
   "realwork": [
     {
       "id": 1,
+      "appName": "Bongomin Web Solution",
+      "description": "A modern and professional web development company website designed in Figma and developed using React, TailwindCSS, and custom CSS to ensure a fully responsive and seamless user experience.",
+      "techs": ["ReactJs", "TailWindCss", "CSS"],
+      "liveUrl": "https://bongominwebsolutions.com/",
+      "images": "/godfrey_bongomin/images/featured/bws.png"
+    },
+    {
+      "id": 2,
+      "appName": "Knot Your Planner",
+      "description": "A beautifully crafted wedding planner website designed and developed in WordPress using Elementor and custom CSS, delivering a stunning, responsive, and client-centric experience.",
+      "techs": ["Wordpress", "Elementor", "CSS"],
+      "liveUrl": "https://knotyourplanner.com/",
+      "images": "/godfrey_bongomin/images/featured/kyp.png"
+    },
+    {
+      "id": 3,
       "appName": "Creative Women",
       "description": "I designed and developed a responsive Ecommerce website with mulitple customer groups/prices for retail, wholesale and dropship for my client on Shopify.. I utilized Shopify, Custom HTML, CSS, and JavaScript.",
       "techs": ["Shopify", "HTML", "CSS", "Javascript"],
@@ -9,7 +25,7 @@
       "images": "/godfrey_bongomin/images/featured/creativewomen1.png"
     },
     {
-      "id": 2,
+      "id": 4,
       "appName": "Bee Organized",
       "description": "As the Technical Web Support Specialist, my responsibilities include build and maintain monthly blog posts on their Wordpress website. I utilize Wordpress, Custom HTML, and CSS. My other responsibilities include Mailchimp/Jobber & Zapier/Jobber integrations,  full website audits & reporting, plus additional website maintenance and partner support. ",
       "techs": ["Wordpress", "HTML", "CSS"],
@@ -26,20 +42,20 @@
       "github": "https://github.com/bongomin256/audiophile-ecommerce-website",
       "liveUrl": "https://audiophile-ecommerce-website-blue.vercel.app/",
       "images": "/godfrey_bongomin/images/featured/audiophile.png"
-    },
+    }
+  ],
+  "others": [
     {
-      "id": 2,
+      "id": 1,
       "appName": "loopstudio landing page",
       "description": "This is loopstudio landing page, it allows users to view the optimal layout for the site depending on their device's screen size and see hover states for all interactive elements on the page ",
       "techs": ["Javascript", "HTML", "CSS"],
       "github": "https://github.com/bongomin256/loopstudio-landing-page",
       "liveUrl": "https://bongomin256.github.io/loopstudio-landing-page/",
       "images": "/godfrey_bongomin/images/featured/loopstudio.png"
-    }
-  ],
-  "others": [
+    },
     {
-      "id": 1,
+      "id": 2,
       "appName": "random recipes generator",
       "description": "The web app generate random recipes to any ingredients provided.The main aim of this application is to incorporate two APIs (Edemam and Giphy)  and use the  fetched datas to update the page with one api depending on the other.",
       "techs": ["Javascript", "HTML", "CSS", "Bulma", "APIs"],
@@ -48,7 +64,7 @@
       "images": "/godfrey_bongomin/images/featured/RRG.png"
     },
     {
-      "id": 2,
+      "id": 3,
       "appName": "local exchange hub",
       "description": "In this web app, you can signup and post any used item/s that you would like to get rid of for free or in exchange of something that some other user posted, other than throwing it away to reduce waste and its impact to the environment.",
       "techs": ["Javascript", "HTML", "CSS", "Handlebars", "MySQL"],
@@ -58,7 +74,7 @@
     },
 
     {
-      "id": 3,
+      "id": 4,
       "appName": "weather dashboard",
       "description": "This is a school individual project where we were tasked to design a Weather Dashboard. This appplcation fetches data for any city searched from open weather map API and use the fetched data to update the page.",
       "techs": ["Javascript", "HTML", "CSS", "APIs"],
@@ -67,7 +83,7 @@
       "images": "/godfrey_bongomin/images/others/weather.png"
     },
     {
-      "id": 4,
+      "id": 5,
       "appName": "work day scheduler",
       "description": "This is Work day planner web application, it is like a to-do app which helps you plan your work day. In the present time the color of the task block is green and if past the hour it changes to grey.",
       "techs": ["Javascript", "HTML", "CSS"],
@@ -76,7 +92,7 @@
       "images": "/godfrey_bongomin/images/others/workdayPlanner.png"
     },
     {
-      "id": 5,
+      "id": 6,
       "appName": "react portfolio",
       "description": "This is my first react personal portfolio website that i designed after the completion of my bootcamp to showcase the acquired skillsets",
       "techs": ["React", "Styled-component", "CSS"],
